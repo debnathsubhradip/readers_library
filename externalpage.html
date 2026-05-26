@@ -35,17 +35,11 @@
         </div>
     </nav>
 
-    <main class="container-fluid py-3 px-3">
-        <div class="d-flex justify-content-between align-items-center mb-3">
-            <h2><i class="bi bi-file-code me-2"></i>HTML Resource Viewer</h2>
-            <div class="btn-group">
-                <button id="fullscreenBtn" class="btn btn-outline-primary" onclick="toggleFullscreen()">
-                    <i class="bi bi-arrows-fullscreen"></i> Fullscreen
-                </button>
-                <button id="exitFullscreenBtn" class="btn btn-outline-danger" onclick="toggleFullscreen()" style="display:none;">
-                    <i class="bi bi-x-lg"></i> Exit
-                </button>
-                <a id="downloadBtn" class="btn btn-outline-success" href="#" target="_blank">
+    <main class="container py-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>HTML Resource Viewer</h2>
+            <div>
+                <a id="downloadBtn" href="#" class="btn btn-outline-success" target="_blank">
                     <i class="bi bi-download"></i> Download
                 </a>
                 <a href="htmlread.html" class="btn btn-outline-secondary">
@@ -54,7 +48,7 @@
             </div>
         </div>
 
-        <div id="content" style="width:100%; height:85vh; overflow:auto; border:1px solid #dee2e6; border-radius:0.5rem; background:#fff; padding:1rem;"></div>
+        <iframe id="content" style="width:100%; height:80vh; border:1px solid #dee2e6; border-radius:0.5rem; background:#fff;"></iframe>
     </main>
 
     <footer class="bg-dark text-white py-3 mt-auto">
@@ -63,6 +57,8 @@
         </div>
     </footer>
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="javascript/externaldisplay.js"></script>
