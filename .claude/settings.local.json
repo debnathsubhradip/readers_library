@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx serve *)",
+      "Bash(pkill -f \"serve\")",
+      "Bash(pkill -f \"http-server\")",
+      "Bash(npx http-server *)"
+    ]
+  }
+}
